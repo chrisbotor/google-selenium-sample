@@ -25,4 +25,12 @@
         <version>2.44.0</version>
     </dependency>
   </dependencies>
+	
+<repositories>
+    <repository>
+      <id>forplay-legacy</id>
+      <url>http://forplay.googlecode.com/svn/mavenrepo</url>
+    </repository>
+ </repositories>
+	
 </project>
