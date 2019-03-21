@@ -1,6 +1,6 @@
 package com.selenium.google.common;
 
-import org.apache.commons.lang3.StringUtils;
+//import org.apache.commons.lang3.StringUtils;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -24,9 +24,10 @@ public class Browser {
      */
     public static WebDriver getDriver() {
 
-        String driverToUse = System.getProperty("browser");
+        //String driverToUse = System.getProperty("browser");
+	String driverToUse = System.getProperty("firefox");    
 
-        if(StringUtils.isEmpty(driverToUse)) {
+        //if(StringUtils.isEmpty(driverToUse)) {
             
            FirefoxOptions ff=new FirefoxOptions();
 		
@@ -36,8 +37,10 @@ public class Browser {
 		  FirefoxDriver driver=new FirefoxDriver(ff);
             
           return new FirefoxDriver();
-        }
+        
+    	//}
 
+	/*    
         if (driverToUse.equalsIgnoreCase("firefox"))
             return new FirefoxDriver();
         else if (driverToUse.equalsIgnoreCase("ie"))
@@ -46,6 +49,7 @@ public class Browser {
             return new ChromeDriver();
         else
             return new FirefoxDriver();
+    	*/
     }
 
 }
