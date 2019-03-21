@@ -25,7 +25,15 @@ public class Browser {
         String driverToUse = System.getProperty("browser");
 
         if(StringUtils.isEmpty(driverToUse)) {
-            return new FirefoxDriver();
+            
+           FirefoxOptions ff=new FirefoxOptions();
+		
+		  //Create headless browser using setHeadLess method and set it to true
+		  ff.setHeadless(true);
+		
+		  FirefoxDriver driver=new FirefoxDriver(ff);
+            
+          return new FirefoxDriver();
         }
 
         if (driverToUse.equalsIgnoreCase("firefox"))
