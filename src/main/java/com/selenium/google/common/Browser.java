@@ -25,7 +25,7 @@ public class Browser {
     public static WebDriver getDriver() {
 
         //String driverToUse = System.getProperty("browser");
-	String driverToUse = System.getProperty("firefox");    
+	String driverToUse = System.getProperty("firefox  --headless");    
 
         //if(StringUtils.isEmpty(driverToUse)) {
             
