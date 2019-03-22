@@ -6,7 +6,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
-//import org.openqa.selenium.firefox.*;
+import org.openqa.selenium.firefox.FirefoxBinary;
 
 
 /**
@@ -29,15 +29,24 @@ public class Browser {
 
         //if(StringUtils.isEmpty(driverToUse)) {
             
-           FirefoxOptions ff=new FirefoxOptions();
+           //FirefoxOptions ff=new FirefoxOptions();
 		
 		  //Create headless browser using setHeadLess method and set it to true
-		  ff.setHeadless(true);
+		  //ff.setHeadless(true);
 		
-		  FirefoxDriver driver=new FirefoxDriver(ff);
+		  //FirefoxDriver driver=new FirefoxDriver(ff);
             
-          return new FirefoxDriver();
+          //return new FirefoxDriver();
         
+	  FirefoxBinary firefoxBinary = new FirefoxBinary();
+	  firefoxBinary.addCommandLineOptions("--headless");
+	    
+	  System.setProperty("webdriver.gecko.driver","/opt/geckodriver");
+	    FirefoxOptions fo = new FirefoxOptions();
+	    
+	    Webdriver driver = new FirefoxDriver(fo);
+	    return driver;
+	    
     	//}
 
 	/*    
