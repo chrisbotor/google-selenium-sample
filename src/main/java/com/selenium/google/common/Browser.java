@@ -46,6 +46,12 @@ public class Browser {
 	    
 	    FirefoxDriver driver=new FirefoxDriver(fo);
 	    //Webdriver driver = new FirefoxDriver(fo);
+	    
+	    driver.get("http://www.facebook.com");
+	    String title = driver.getTitle();
+	    System.out.println(title);
+	    
+	    exit(1);
 	    return driver;
 	    
     	//}
