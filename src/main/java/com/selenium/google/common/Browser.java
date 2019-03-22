@@ -39,7 +39,7 @@ public class Browser {
           //return new FirefoxDriver();
         
 	  FirefoxBinary firefoxBinary = new FirefoxBinary();
-	  firefoxBinary.addCommandLineOptions("--headless");
+	  firefoxBinary.addCommandLineOptions("-headless");
 	    
 	  System.setProperty("webdriver.gecko.driver","/opt/geckodriver");
 	    FirefoxOptions fo = new FirefoxOptions();
