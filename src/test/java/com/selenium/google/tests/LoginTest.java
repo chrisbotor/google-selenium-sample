@@ -23,7 +23,7 @@ public class LoginTest  {
         driver.close();
     }
 
-	/*
+
 	@Test
 	public void blankUserNameRightPasswordLoginTest(){
 		Login login = new Login(driver);
@@ -31,8 +31,8 @@ public class LoginTest  {
 		Assert.assertTrue(login.getErrorMsg().contains("Enter your email address."));
 	}
         
-	*/
 	
+	/*
 	@Test
 	public void wrongUserNameRightPasswordLoginTest(){
 		Login login = new Login(driver);
@@ -40,7 +40,7 @@ public class LoginTest  {
 		Assert.assertTrue(HomePage.getErrorMessage(driver).getText().contains("Enter your email address."));
 	}
        
-	/*
+	
 	@Test
 	public void blankUserNameWrongPasswordLoginTest(){
 		Login login = new Login(driver);
