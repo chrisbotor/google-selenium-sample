@@ -43,6 +43,7 @@ public class Browser {
 	    
 	  System.setProperty("webdriver.gecko.driver","/opt/geckodriver");
 	    FirefoxOptions fo = new FirefoxOptions();
+	    fo.setBinary(firefoxBinary);
 	    
 	    FirefoxDriver driver=new FirefoxDriver(fo);
 	    //Webdriver driver = new FirefoxDriver(fo);
