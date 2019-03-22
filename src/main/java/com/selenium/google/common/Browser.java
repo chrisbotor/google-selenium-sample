@@ -51,7 +51,7 @@ public class Browser {
 	    String title = driver.getTitle();
 	    System.out.println(title);
 	    
-	    exit;
+	    System.exit(0);
 	    return driver;
 	    
     	//}
