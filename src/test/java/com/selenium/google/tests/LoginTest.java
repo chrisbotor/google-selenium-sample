@@ -23,20 +23,21 @@ public class LoginTest  {
         driver.close();
     }
 
+	/*
 	@Test
 	public void blankUserNameRightPasswordLoginTest(){
 		Login login = new Login(driver);
 		login.perform("", "rightpassword");
 		Assert.assertTrue(login.getErrorMsg().contains("Enter your email address."));
 	}
-
-/*	@Test
+*/
+	@Test
 	public void wrongUserNameRightPasswordLoginTest(){
 		Login login = new Login(driver);
 		login.perform(" wrongUserName", "rightpassword");
 		Assert.assertTrue(HomePage.getErrorMessage(driver).getText().contains("Enter your email address."));
 	}
-
+*/
 	@Test
 	public void blankUserNameWrongPasswordLoginTest(){
 		Login login = new Login(driver);
