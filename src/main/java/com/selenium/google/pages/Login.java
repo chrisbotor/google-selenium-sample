@@ -49,7 +49,7 @@ public class Login extends BasePage {
     
     
     public String getErrorMsg(){
-        return getText(homePage.lblLoginErrorMsg);
+        return getText(homePage.lblLoginErrorMsg1);
     }
     
 }
