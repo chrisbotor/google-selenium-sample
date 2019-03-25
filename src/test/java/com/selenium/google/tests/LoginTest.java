@@ -33,11 +33,21 @@ public class LoginTest  {
     
     
     @Test
-	public void blankUserNameRightPasswordLoginTest(){
+	public void BlankUserNameRightPasswordLoginTest(){
 		Login login = new Login(driver);
-		login.perform("", "M@y022015!");
+		login.perform("password", "M@y022015!");
 	
     }
+    
+    
+    @Test
+	public void RightUserNameBlankPasswordLoginTest(){
+		Login login = new Login(driver);
+		login.perform("username", "chrisbotor@gmail.com");
+	
+    }
+    
+    
     
 	/*
     @Test
