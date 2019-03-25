@@ -32,6 +32,13 @@ public class LoginTest  {
     }
     
     
+    @Test
+	public void blankUserNameRightPasswordLoginTest(){
+		Login login = new Login(driver);
+		login.perform("", "M@y022015!");
+	
+    }
+    
 	/*
     @Test
 	public void blankUserNameRightPasswordLoginTest(){
