@@ -23,50 +23,15 @@ public class Browser {
      * @return the driver
      */
     public static WebDriver getDriver() {
-
-        //String driverToUse = System.getProperty("browser");
-	//String driverToUse = System.getProperty("firefox  --headless");    
-
-        //if(StringUtils.isEmpty(driverToUse)) {
-            
-           //FirefoxOptions ff=new FirefoxOptions();
-		
-		  //Create headless browser using setHeadLess method and set it to true
-		  //ff.setHeadless(true);
-		
-		  //FirefoxDriver driver=new FirefoxDriver(ff);
-            
-          //return new FirefoxDriver();
-        
-	  FirefoxBinary firefoxBinary = new FirefoxBinary();
-	  firefoxBinary.addCommandLineOptions("-headless");
-	    
-	  System.setProperty("webdriver.gecko.driver","/opt/geckodriver");
-	    FirefoxOptions fo = new FirefoxOptions();
-	    fo.setBinary(firefoxBinary);
-	    
-	    FirefoxDriver driver=new FirefoxDriver(fo);
-	    //Webdriver driver = new FirefoxDriver(fo);
-	    
-	    //driver.get("http://www.facebook.com");
-	    //String title = driver.getTitle();
-	    //System.out.println(title);
-	    
-	    //System.exit(0);
-	    return driver;
-	    
-    	//}
-
-	/*    
-        if (driverToUse.equalsIgnoreCase("firefox"))
-            return new FirefoxDriver();
-        else if (driverToUse.equalsIgnoreCase("ie"))
-            return new InternetExplorerDriver();
-        else if (driverToUse.equalsIgnoreCase("chrome"))
-            return new ChromeDriver();
-        else
-            return new FirefoxDriver();
-    	*/
+    	
+    	FirefoxBinary firefoxBinary = new FirefoxBinary();
+    	firefoxBinary.addCommandLineOptions("-headless");
+    	System.setProperty("webdriver.gecko.driver","/opt/geckodriver");
+    	FirefoxOptions fo = new FirefoxOptions();
+    	fo.setBinary(firefoxBinary);
+    	FirefoxDriver driver=new FirefoxDriver(fo);
+    
+    return driver;
     }
 
 }

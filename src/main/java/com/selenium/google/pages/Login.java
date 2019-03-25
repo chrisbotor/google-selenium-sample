@@ -34,8 +34,8 @@ public class Login extends BasePage {
      * @param password the password
      */
     public void perform(String username,String password){
-        openUrl("https://gmail.com");
-	//openUrl("https://facebook.com");    
+        //openUrl("https://gmail.com");
+        openUrl("https://facebook.com");    
         fillIn(homePage.txtEmail, username);
         fillIn(homePage.txtPassword, password);
         click(homePage.btnLogin);
@@ -46,7 +46,10 @@ public class Login extends BasePage {
      *
      * @return the error msg
      */
+    
+    
     public String getErrorMsg(){
         return getText(homePage.lblLoginErrorMsg);
     }
+    
 }

@@ -12,20 +12,33 @@ import org.openqa.selenium.support.How;
  */
 public class HomePage {
 
-    /** The user textfield. */
-    @FindBy(how= How.ID,using="Email")
-    public WebElement txtEmail;
+	/** The user textfield. */
+    //@FindBy(how= How.ID,using="Email")
+    //public WebElement txtEmail;
 
     /** The password textfield. */
-    @FindBy(how= How.ID,using="Passwd")
-    public WebElement txtPassword;
+    //@FindBy(how= How.ID,using="Passwd")
+    //public WebElement txtPassword;
 
     /** The button for signing in. */
-    @FindBy(how= How.ID,using="signIn")
-    public WebElement btnLogin;
+    //@FindBy(how= How.ID,using="signIn")
+    //public WebElement btnLogin;
 
     /** The label login error msg. */
-    @FindBy(how= How.ID,using="errormsg_0_Email")
+    //@FindBy(how= How.ID,using="errormsg_0_Email")
+    //public WebElement lblLoginErrorMsg;
+	
+	@FindBy(how= How.ID,using="email")
+	public WebElement txtEmail;
+	
+	@FindBy(how= How.ID,using="pass")
+    public WebElement txtPassword;
+	
+	@FindBy(how= How.ID,using="errormsg_0_Email")
     public WebElement lblLoginErrorMsg;
+	
+	@FindBy(how= How.ID,using="loginbutton")
+    public WebElement btnLogin;
+
 
 }
