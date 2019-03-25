@@ -44,7 +44,7 @@ public class LoginTest  {
 	public void RightUserNameBlankPasswordLoginTest(){
 		Login login = new Login(driver);
 		login.perform("username", "chrisbotor@gmail.com");
-	
+		Assert.assertTrue(login.getErrorMsg().contains("Sign up for an account."));
     }
     
     

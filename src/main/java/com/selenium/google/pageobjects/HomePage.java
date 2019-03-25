@@ -40,5 +40,7 @@ public class HomePage {
 	@FindBy(how= How.ID,using="loginbutton")
     public WebElement btnLogin;
 
+	@FindBy(partialLinkText="Sign up for an account")
+    public WebElement lblLoginErrorMsg1;
 
 }
