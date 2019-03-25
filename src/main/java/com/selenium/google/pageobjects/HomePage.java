@@ -34,7 +34,7 @@ public class HomePage {
 	@FindBy(how= How.ID,using="pass")
     public WebElement txtPassword;
 	
-	@FindBy(how= How.ID,using="errormsg_0_Email")
+	@FindBy(how= How.ID,using="js_1m")
     public WebElement lblLoginErrorMsg;
 	
 	@FindBy(how= How.ID,using="loginbutton")
