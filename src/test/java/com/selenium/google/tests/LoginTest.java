@@ -24,13 +24,22 @@ public class LoginTest  {
     }
 
 
-	@Test
+    @Test
+    public void CorrectDetails() {
+    	Login login = new Login(driver);
+    	login.perform("username", "chrisbotor@gmail.com");
+		login.perform("password", "M@y022015!");
+    }
+    
+    
+	/*
+    @Test
 	public void blankUserNameRightPasswordLoginTest(){
 		Login login = new Login(driver);
 		login.perform("", "rightpassword");
 		Assert.assertTrue(login.getErrorMsg().contains("Enter your email address."));
 	}
-        
+    */    
 	
 
 	/*
