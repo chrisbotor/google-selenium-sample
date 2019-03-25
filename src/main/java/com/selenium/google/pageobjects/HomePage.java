@@ -40,7 +40,9 @@ public class HomePage {
 	@FindBy(how= How.ID,using="loginbutton")
     public WebElement btnLogin;
 
-	@FindBy(partialLinkText="Forgot Password?")
+	@FindBy(partialLinkText="Forgot")
     public WebElement lblLoginErrorMsg1;
+	
+
 
 }

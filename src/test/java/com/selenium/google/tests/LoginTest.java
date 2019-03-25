@@ -32,19 +32,21 @@ public class LoginTest  {
     }
     
     
+    /*
     @Test
 	public void BlankUserNameRightPasswordLoginTest(){
 		Login login = new Login(driver);
 		login.perform("password", "M@y022015!");
 	
     }
+    */
     
     
     @Test
 	public void RightUserNameBlankPasswordLoginTest(){
 		Login login = new Login(driver);
 		login.perform("username", "chrisbotor@gmail.com");
-		Assert.assertTrue(login.getErrorMsg().contains("Forgot Password"));
+		Assert.assertTrue(login.getErrorMsg().contains("Forgot Password?"));
     }
     
     
